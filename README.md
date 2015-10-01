@@ -49,7 +49,12 @@ For normal procedure of priority you do not need to set this attribute.
 
 ### Skipping specific medias for speicific platforms
 
+So if a media does not have specific rights for a platform we can tag these items to be skipped.
+To “tag” an asset that is not deployable for our OTT platforms, you should put in:
 
+	<App_Data App=“MOD” Name=“Not_Public_For_Platforms” Value=“OTT”/>
+
+in the package tag (Asset_Class=“Package”)
 
 ### Multiple Languages
 
@@ -78,6 +83,8 @@ The specific delivered format should be know as well as the ending of the filena
 
 We want as high scale image as possible. Possible values for images COVER, SAMART
 Images are referenced through the ADI file, so that it is possible to link from the ADI file to the images.
+
+COVER is primary. And we would of course also like to get the poster and horizontal images (ARTWORK)
 
 In the ADI you can also describe what format the images are as well (COVER, SAMARTWORK etc.). 
 
