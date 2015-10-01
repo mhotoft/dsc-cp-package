@@ -13,6 +13,24 @@ Deliverables from the content provider:
 	* Images
 * Subtitles
 
+## Delivering the files
+
+So the metadata (ADI), binaries, subtitles etc. are put on our secure FTP server.
+You just need to place the content into a specific directory (e.g. name of the content provider). Each piece of content devlivered in a seperate directory. e.g. 
+
+	[content provider name]/[your-asset-ID or title]/batman_adi.xml
+	[content provider name]/[your-asset-ID or title]/batman.ts
+	[content provider name]/[your-asset-ID or title]/batman.smi
+	[content provider name]/[your-asset-ID or title]/batman_cover.jpg
+	[content provider name]/[your-asset-ID or title]/batman_poster.jpg
+
+So for our file structure we want to have each package in separate directory.
+So that the TS, xml, images and smi files are in the same directory.
+For series we want the same structure pr. season. 
+
+Naming of the directory can be done either through title or if you have any internal provider specific ID.
+
+You can get the credentials and setup of our FTP server from the TDC technical staff.
 
 ## Metadata
 All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](providerADI.xsd)). 
@@ -28,6 +46,10 @@ For urgent videos that needs to be rushed through the system, add this tag:
 	<App_Data App="MOD" Name="Priority" Value="rush" />
 
 For normal procedure of priority you do not need to set this attribute.
+
+### Skipping specific medias for speicific platforms
+
+
 
 ### Multiple Languages
 
@@ -55,6 +77,22 @@ The specific delivered format should be know as well as the ending of the filena
 ## Image Binary
 
 We want as high scale image as possible. Possible values for images COVER, SAMART
+Images are referenced through the ADI file, so that it is possible to link from the ADI file to the images.
+
+In the ADI you can also describe what format the images are as well (COVER, SAMARTWORK etc.). 
+
+We expect at least one image (cover) per asset in the highest resolution.
+
+	<Asset>
+		<Metadata>
+			<AMS Provider="CMORE" Product="MOD" Asset_Name="package_000342227" Version_Major="1" Version_Minor="0" Description="COVER asset for HaltandCatchFire0208" Creation_Date="2015-08-11" Provider_ID="CMORE" Asset_ID="CMRE0000000000342227" Asset_Class="COVER"Verb=""/>
+			<App_Data App="MOD" Name="Type" Value="cover"/>
+			<App_Data App="MOD" Name="Content_FileSize" Value=""/>
+			<App_Data App="MOD" Name="Content_CheckSum" Value=""/>
+		</Metadata>
+		<Content Value="CMRE0000000000342227_360x576_se.jpg"/>
+	</Asset>
+
 
 ## Subtitles 
 
@@ -64,3 +102,5 @@ We want as high scale image as possible. Possible values for images COVER, SAMAR
 ## Video
 
 ## Series
+
+# Testing
