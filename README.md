@@ -5,7 +5,7 @@ TDC's automated workflow for content providers to ingest of metadata and actual 
 # Content Providers
 
 
-Deliverables
+Deliverables from the content provider:
 
 * Metadata (ADI.xml files)
 * Binaries
@@ -15,9 +15,19 @@ Deliverables
 
 
 ## Metadata
-All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file). 
+All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](providerADI.xsd)). 
 
 The files should be delivered in UTF-8 encoding on our files system (isilon).
+
+
+### Priority
+Because it take time to ingest the video binaries, we support different levels of urgency when sending an asset. 
+
+For urgent videos that needs to be rushed through the system, add this tag:
+
+	<App_Data App="MOD" Name="Priority" Value="rush" />
+
+For normal procedure of priority you do not need to set this attribute.
 
 ### Multiple Languages
 
@@ -47,3 +57,10 @@ The specific delivered format should be know as well as the ending of the filena
 We want as high scale image as possible. Possible values for images COVER, SAMART
 
 ## Subtitles 
+
+
+# Full Examples
+
+## Video
+
+## Series
