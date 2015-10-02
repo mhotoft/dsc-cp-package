@@ -118,4 +118,4 @@ We have provided a test suite to test your content. So in order to see if your m
 
 	java -jar tdc-ingest-test.jar metadata.xml
 	
-The tdc-ingest-test.jar file can be downloaded here: [tdc-ingest-test.jar](https://github.com/YouSee/dsc-cp-package/blob/master/build/tdc-ingest-test.jar)
+The tdc-ingest-test.jar file can be downloaded here: [tdc-ingest-test.jar](build/tdc-ingest-test.jar?raw=true)
