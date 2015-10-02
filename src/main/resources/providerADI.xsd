@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ADI">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Metadata"/>
+				<xs:element ref="Asset" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Asset">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Metadata"/>
+                <xs:element ref="Asset" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Content" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Content">
+		<xs:complexType>
+			<xs:attribute name="Value" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Metadata">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="AMS"/>
+				<xs:element ref="App_Data" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="App_Data">
+		<xs:complexType>
+			<xs:attribute name="App" type="xs:string" use="required"/>
+			<xs:attribute name="Name" type="xs:string" use="required"/>
+			<xs:attribute name="Value" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AMS">
+		<xs:complexType>
+			<xs:attribute name="Asset_Class" type="xs:string" use="required"/>
+			<xs:attribute name="Asset_ID" type="xs:string" use="required"/>
+			<xs:attribute name="Asset_Name" type="xs:string" use="required"/>
+			<xs:attribute name="Creation_Date" type="xs:string" use="required"/>
+			<xs:attribute name="Provider" type="xs:string" use="required"/>
+			<xs:attribute name="Provider_ID" type="xs:string" use="required"/>
+			<xs:attribute name="Description" type="xs:string" use="required"/>
+			<xs:attribute name="Product" type="xs:string" use="required"/>
+			<xs:attribute name="Verb" type="xs:string" use="required"/>
+			<xs:attribute name="Version_Major" type="xs:string" use="required"/>
+			<xs:attribute name="Version_Minor" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

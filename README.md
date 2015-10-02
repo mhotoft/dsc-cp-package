@@ -77,9 +77,11 @@ Example:
 
 
 ## Video Binary
-The specific delivered format should be know as well as the ending of the filename. E.g. CM_RE12312321.ts or other. 
+The specific delivered format should be know as well as the ending of the filename. E.g. CM_RE12312321.ts or other. *.ts are accepted for now.
 
 ## Image Binary
+
+*.jpg are accepted
 
 We want as high scale image as possible. Possible values for images COVER, SAMART
 Images are referenced through the ADI file, so that it is possible to link from the ADI file to the images.
@@ -103,6 +105,7 @@ We expect at least one image (cover) per asset in the highest resolution.
 
 ## Subtitles 
 
+*.srt or *.smi files are accepted.
 
 # Full Examples
 
@@ -111,3 +114,6 @@ We expect at least one image (cover) per asset in the highest resolution.
 ## Series
 
 # Testing
+We have provided a test suite to test your content. So in order to see if your metadata validates against our XSD, please run this:
+
+	java -jar tdc-ingest-test.jar metadata.xml

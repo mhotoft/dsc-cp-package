@@ -10,7 +10,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import dk.yousee.vod.kiosk.adi.generated.ADI;
-import dk.yousee.vod.kiosk.generic.util.AdiUtils;
 
 @Configuration
 @ComponentScan
@@ -28,13 +27,13 @@ public class App {
 		
 		InputStream adiInput = null;
 		adiInput = new FileInputStream(file);
-		adiInput.close();
+		
 		
 		StringWriter writer = new StringWriter();
 		IOUtils.copy(adiInput, writer, "UTF-8");
 		String adiString = writer.toString();		
 		ADI adi = AdiUtils.transformXml(adiString, true, false);
-		
+		adiInput.close();
 		/*
 		 * Assert.assertNotNull(adi); Assert.assertEquals("CMORE",
 		 * adi.getMetadata().getAMS().getProvider()); List<AppData> appData =
