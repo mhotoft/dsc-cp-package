@@ -117,3 +117,5 @@ We expect at least one image (cover) per asset in the highest resolution.
 We have provided a test suite to test your content. So in order to see if your metadata validates against our XSD, please run this:
 
 	java -jar tdc-ingest-test.jar metadata.xml
+	
+The tdc-ingest-test.jar file can be downloaded here: [tdc-ingest-test.jar](build/tdc-ingest-test.jar)
