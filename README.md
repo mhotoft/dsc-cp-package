@@ -33,7 +33,7 @@ Naming of the directory can be done either through title or if you have any inte
 You can get the credentials and setup of our FTP server from the TDC technical staff.
 
 ## Metadata
-All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](providerADI.xsd)). 
+All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](src/main/resource/providerADI.xsd)). 
 
 The files should be delivered in UTF-8 encoding on our files system (isilon) as shown in the above section.
 
