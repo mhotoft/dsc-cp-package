@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ADI>
+	<Metadata>
+		<AMS Provider="XXXX" Product="MOD" Asset_Name="package_000390144"
+			Version_Major="1" Version_Minor="1" Description="Package asset for Simonogegene"
+			Creation_Date="2015-09-09" Provider_ID="XXXX" Asset_ID="XXXX0000000000390144"
+			Asset_Class="package" Verb="" />
+		<App_Data App="MOD" Name="Metadata_Spec_Version" Value="CableLabsVOD1.1" />
+		<App_Data App="MOD" Name="Not_Public_For_Platforms" Value="" />
+	</Metadata>
+	<Asset>
+		<Metadata>
+			<AMS Provider="XXXX" Product="MOD" Asset_Name="title_000390144"
+				Version_Major="1" Version_Minor="1" Description="Title asset for Simonogegene"
+				Creation_Date="2015-09-09" Provider_ID="XXXX" Asset_ID="XXXX0000000000390144"
+				Asset_Class="title" Verb="" />
+			<App_Data App="MOD" Name="Type" Value="title" />
+			<App_Data App="MOD" Name="Language" Value="da" />
+			<App_Data App="MOD" Name="Title_Sort_Name" Value="Simon og egene 0901" />
+			<App_Data App="MOD" Name="Title_Brief" Value="Simonogegene" />
+			<App_Data App="MOD" Name="Title" Value="Simon og egene" />
+			<App_Data App="MOD" Name="Summary_Short"
+				Value="Drama efter Marianne Fredrikssons roman om den begavede Simon, der vokser op i Göteborg i skyggen af Anden Verdenskrig i en arbejderklassefamilie." />
+			<App_Data App="MOD" Name="Summary_Medium"
+				Value="Simon vokser op i en arbejderklassefamilie i Göteborg i skyggen af Anden Verdenskrig. Han føler sig anderledes og ønsker at læse videre, hvilket hans fat er imod. Via sin skole møder han en jødefamilie, der flygtede fra nazisterne, og mødet får dramatiske " />
+			<App_Data App="MOD" Name="Summary_Long"
+				Value="Simon vokser op i en arbejderklassefamilie i Göteborg i skyggen af Anden Verdenskrig. Han føler sig anderledes og ønsker at læse videre, hvilket hans fat er imod. Via sin skole møder han en jødefamilie, der flygtede fra nazisterne, og mødet får dramatiske konsekvenser." />
+			<App_Data App="MOD" Name="Rating" Value="0" />
+			<App_Data App="MOD" Name="Run_Time" Value="02:02:00" />
+			<App_Data App="MOD" Name="Display_Run_Time" Value="02:02" />
+			<App_Data App="MOD" Name="Year" Value="2011" />
+			<App_Data App="MOD" Name="Country_Of_Origin" Value="Sverige" />
+			<App_Data App="MOD" Name="Country_Of_Origin" Value="Danmark" />
+			<App_Data App="MOD" Name="Actors" Value="Skarsgård, Bill" />
+			<App_Data App="MOD" Name="Actors" Value="Sjöholm, Helen" />
+			<App_Data App="MOD" Name="Actors" Value="Liefers, JanJosef" />
+			<App_Data App="MOD" Name="Actors_Display"
+				Value="Bill Skarsgård,Helen Sjöholm,Jan Josef Liefers" />
+			<App_Data App="MOD" Name="Director" Value="Ohlin, Lisa" />
+			<App_Data App="MOD" Name="Writers_Display" Value="Lisa Ohlin" />
+			<App_Data App="MOD" Name="Billing_ID" Value="" />
+			<App_Data App="MOD" Name="Genre" Value="Drama" />
+			<App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-09-01T00:00:00" />
+			<App_Data App="MOD" Name="Licensing_Window_End" Value="2016-08-31T23:59:59" />
+		</Metadata>
+	</Asset>
+</ADI>

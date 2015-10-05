@@ -16,9 +16,8 @@ import dk.yousee.vod.kiosk.adi.generated.ADI;
 @EnableAutoConfiguration
 public class App {
 	public static void main(String[] args) throws Exception {
-		System.out.println("Usage: TestADI <adiFile.xml>");
 		testADI(args[0]);
-		System.out.println("Done. Everything looks fine!");
+		System.out.println("################## Done. Everything looks fine!");
 	}
 
 	public static void testADI(String file) throws Exception {

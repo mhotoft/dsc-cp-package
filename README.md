@@ -16,7 +16,7 @@ Deliverables from the content provider:
 ## Delivering the files
 
 So the metadata (ADI), binaries, subtitles etc. are put on our secure FTP server.
-You just need to place the content into a specific directory (e.g. name of the content provider). Each piece of content devlivered in a seperate directory. e.g. 
+You just need to place the content into a specific directory (e.g. name of the content provider). Each piece of content devlivered in a seperate directory, which is either the internal asset id of the provider or the specific title of the asset. e.g. 
 
 	[content provider name]/[your-asset-ID or title]/batman_adi.xml
 	[content provider name]/[your-asset-ID or title]/batman.ts
@@ -35,7 +35,7 @@ You can get the credentials and setup of our FTP server from the TDC technical s
 ## Metadata
 All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](providerADI.xsd)). 
 
-The files should be delivered in UTF-8 encoding on our files system (isilon).
+The files should be delivered in UTF-8 encoding on our files system (isilon) as shown in the above section.
 
 
 ### Priority
@@ -75,6 +75,12 @@ Example:
 	</Asset>
 
 
+### License 
+
+			<App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-09-01T00:00:00" />
+			<App_Data App="MOD" Name="Licensing_Window_End" Value="2016-08-31T23:59:59" />
+				
+
 
 ## Video Binary
 The specific delivered format should be know as well as the ending of the filename. E.g. CM_RE12312321.ts or other. *.ts are accepted for now.
@@ -105,13 +111,18 @@ We expect at least one image (cover) per asset in the highest resolution.
 
 ## Subtitles 
 
-*.srt or *.smi files are accepted.
+All subtitles as *.srt or *.smi files are accepted.
 
 # Full Examples
 
 ## Video
 
+A full example of a simple movie can be found here: [XXXX0000000000390144](src/main/resources/XXXX0000000000390144/?raw=true)
+
 ## Series
+
+A full example of a series VOD can be found here: [XXXX0000000000390144](src/main/resources/XXXX0000000000390144/?raw=true)
+
 
 # Testing
 We have provided a test suite to test your content. So in order to see if your metadata validates against our XSD, please run this:
