@@ -33,7 +33,7 @@ Naming of the directory can be done either through title or if you have any inte
 You can get the credentials and setup of our FTP server from the TDC technical staff.
 
 ## Metadata
-All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](src/main/resource/providerADI.xsd)). 
+All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](src/main/resource/providerADI.xsd?raw=true)). 
 
 The files should be delivered in UTF-8 encoding on our files system (isilon) as shown in the above section.
 
@@ -63,12 +63,12 @@ Example:
 
 	<Asset>
    		<Metadata>   
-    		<AMS Asset_Name="" Asset_ID="AAIQB" Asset_Class="Title" Provider="CMORE" Provider_ID="CMORE" Product="" Version_Minor="0" Version_Major="1" Creation_Date="2014-10-23" Verb="" />
+    		<AMS Asset_Name="" Asset_ID="AAIQB" Asset_Class="Title" Provider="XXXX" Provider_ID="XXXX" Product="" Version_Minor="0" Version_Major="1" Creation_Date="2014-10-23" Verb="" />
 		   <App_Data App="MOD" Name="Language" Value="da" />     
 		   <App_Data App="MOD" Name="Type" Value="somedanishtitle" />
 		   <App_Data App="MOD" Name="Title_Sort_Name" Value="" />
 	   <Metadata>      
-			<AMS Asset_Name="" Asset_ID="AAIQB" Asset_Class="Title" Provider="CMORE" Provider_ID="CMORE" Product="" Version_Minor="0" Version_Major="1" Creation_Date="2014-10-23" Verb="" /> 
+			<AMS Asset_Name="" Asset_ID="AAIQB" Asset_Class="Title" Provider="XXXX" Provider_ID="XXXX" Product="" Version_Minor="0" Version_Major="1" Creation_Date="2014-10-23" Verb="" /> 
 		   <App_Data App="MOD" Name="Language" Value="sv" />
      		<App_Data App="MOD" Name="Type" Value="someswedishtitle" />
 			<App_Data App="MOD" Name="Title_Sort_Name" Value="" />
@@ -83,7 +83,7 @@ Example:
 
 
 ## Video Binary
-The specific delivered format should be know as well as the ending of the filename. E.g. CM_RE12312321.ts or other. *.ts are accepted for now.
+The specific delivered format should be know as well as the ending of the filename. E.g. XXXX12312321.ts or other. *.ts are accepted for now.
 
 ## Image Binary
 
@@ -100,12 +100,12 @@ We expect at least one image (cover) per asset in the highest resolution.
 
 	<Asset>
 		<Metadata>
-			<AMS Provider="CMORE" Product="MOD" Asset_Name="package_000342227" Version_Major="1" Version_Minor="0" Description="COVER asset for HaltandCatchFire0208" Creation_Date="2015-08-11" Provider_ID="CMORE" Asset_ID="CMRE0000000000342227" Asset_Class="COVER"Verb=""/>
+			<AMS Provider="XXXX" Product="MOD" Asset_Name="package_000342227" Version_Major="1" Version_Minor="0" Description="COVER asset for HaltandCatchFire0208" Creation_Date="2015-08-11" Provider_ID="XXXX" Asset_ID="XXXX0000000000342227" Asset_Class="COVER"Verb=""/>
 			<App_Data App="MOD" Name="Type" Value="cover"/>
 			<App_Data App="MOD" Name="Content_FileSize" Value=""/>
 			<App_Data App="MOD" Name="Content_CheckSum" Value=""/>
 		</Metadata>
-		<Content Value="CMRE0000000000342227_360x576_se.jpg"/>
+		<Content Value="XXXX0000000000342227_360x576_se.jpg"/>
 	</Asset>
 
 
