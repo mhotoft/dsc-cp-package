@@ -37,6 +37,8 @@ All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD
 
 The files should be delivered in UTF-8 encoding on our files system (isilon) as shown in the above section.
 
+Most of the content in the metadata and the tags herein should be straight forward to use and self explanatory. Some are explicitly exaplined here in the next sections.
+
 
 ### Priority
 Because it take time to ingest the video binaries, we support different levels of urgency when sending an asset. 
@@ -47,7 +49,7 @@ For urgent videos that needs to be rushed through the system, add this tag:
 
 For normal procedure of priority you do not need to set this attribute.
 
-### Skipping specific medias for speicific platforms
+### Not for Public Viewing (Skipping specific medias for speicific platforms)
 
 So if a media does not have specific rights for a platform we can tag these items to be skipped.
 To “tag” an asset that is not deployable for our OTT platforms, you should put in:
@@ -67,11 +69,13 @@ Example:
 		   <App_Data App="MOD" Name="Language" Value="da" />     
 		   <App_Data App="MOD" Name="Type" Value="somedanishtitle" />
 		   <App_Data App="MOD" Name="Title_Sort_Name" Value="" />
+	   </Metadata>
 	   <Metadata>      
 			<AMS Asset_Name="" Asset_ID="AAIQB" Asset_Class="Title" Provider="XXXX" Provider_ID="XXXX" Product="" Version_Minor="0" Version_Major="1" Creation_Date="2014-10-23" Verb="" /> 
 		   <App_Data App="MOD" Name="Language" Value="sv" />
      		<App_Data App="MOD" Name="Type" Value="someswedishtitle" />
 			<App_Data App="MOD" Name="Title_Sort_Name" Value="" />
+		</Metadata>
 	</Asset>
 
 
@@ -85,6 +89,20 @@ The license will put the VOD on a given platform or take it away from our platfo
 
 ## Video Binary
 The specific delivered format should be know as well as the ending of the filename. E.g. XXXX12312321.ts or other. *.ts are accepted for now.
+
+The link between the ADI and the video binary can be done through naming of the video file or through linking it within the adi.xml it self, like so:
+
+	<Asset>
+      <Metadata>
+        <AMS Asset_Name="Wire, The, Season 3: 001, Time After Time" Asset_ID="AADYE" Asset_Class="Movie" Provider="XXXX" Provider_ID="XXXX" Product="" Version_Minor="0" Version_Major="1" Description="Wire, The, Season 3: 001, Time After Time" Creation_Date="2015-07-02" Verb="" />
+        <App_Data App="MOD" Name="Type" Value="Movie" />
+        <App_Data App="MOD" Name="Audio_Type" Value="stereo" />
+        <App_Data App="MOD" Name="HD_Content" Value="Y" />
+        <App_Data App="MOD" Name="Content_Filesize" Value="0" />
+        <App_Data App="MOD" Name="Content_Checksum" Value="" />
+      </Metadata>
+      <Content />
+    </Asset>
 
 ## Image Binary
 
@@ -112,11 +130,13 @@ We expect at least one image (cover) per asset in the highest resolution.
 
 ## Subtitles 
 
-All subtitles as *.srt or *.smi files are accepted.
+All subtitles as *.srt or *.smi files are accepted. The link between the ADI metadata file can be either through the naming of the subtitle file or an explicit asset class (Asset_Class="Subtitle").
 
 # Full Examples
 
 ## Video
+
+
 
 A full example of a simple movie can be found here: [XXXX0000000000390144](src/main/resources/XXXX0000000000390144/?raw=true)
 
