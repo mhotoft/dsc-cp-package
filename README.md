@@ -76,6 +76,7 @@ Example:
 
 
 ### License 
+The license will put the VOD on a given platform or take it away from our platforms if the license window have run out. Example:
 
 			<App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-09-01T00:00:00" />
 			<App_Data App="MOD" Name="Licensing_Window_End" Value="2016-08-31T23:59:59" />
@@ -120,6 +121,15 @@ All subtitles as *.srt or *.smi files are accepted.
 A full example of a simple movie can be found here: [XXXX0000000000390144](src/main/resources/XXXX0000000000390144/?raw=true)
 
 ## Series
+Series contains extra metadata such as season id (which chains the metadata together to a season), season name, summary, episode id etc. 
+
+			<App_Data App="MOD" Name="Season_ID" Value="1" />
+			<App_Data App="MOD" Name="Season_Name" Value="The Kennedys" />
+			<App_Data App="MOD" Name="Series_Summary"
+				Value="Her kommer vi tæt på Kennedy-familien og dens begivenhedsrige historie. Alt fra livet i magtens centrum til privatlivet med de mange sidespring og personlige tragedier skildres." />
+			<App_Data App="MOD" Name="Series_Name" Value=" The Kennedys" />
+			<App_Data App="MOD" Name="Episode_ID" Value="1" />
+			<App_Data App="MOD" Name="Episode_Name" Value="Joe's Revenge" />
 
 A full example of a series VOD can be found here: [XXXX0000000000390144](src/main/resources/XXXX0000000000390144/?raw=true)
 

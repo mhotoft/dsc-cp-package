@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ADI>
+	<Metadata>
+		<AMS Provider="XXXX" Product="MOD" Asset_Name="package_000390110"
+			Version_Major="1" Version_Minor="2" Description="Package asset for TheKennedys0101"
+			Creation_Date="2015-09-25" Provider_ID="XXXX" Asset_ID="XXXX0000000000390110"
+			Asset_Class="package" Verb="" />
+		<App_Data App="MOD" Name="Metadata_Spec_Version" Value="CableLabsVOD1.1" />
+		<App_Data App="MOD" Name="Not_Public_For_Platforms" Value="" />
+	</Metadata>
+	<Asset>
+		<Metadata>
+			<AMS Provider="XXXX" Product="MOD" Asset_Name="title_000390110"
+				Version_Major="1" Version_Minor="2" Description="Title asset for TheKennedys0101"
+				Creation_Date="2015-09-25" Provider_ID="XXXX" Asset_ID="XXXX0000000000390110"
+				Asset_Class="title" Verb="" />
+			<App_Data App="MOD" Name="Type" Value="title" />
+			<App_Data App="MOD" Name="Language" Value="da" />
+			<App_Data App="MOD" Name="Title_Sort_Name" Value=" The Kennedys 0901" />
+			<App_Data App="MOD" Name="Title_Brief" Value="Del 1" />
+			<App_Data App="MOD" Name="Title"
+				Value=" The Kennedys: Del 1, Joe's Revenge" />
+			<App_Data App="MOD" Name="Summary_Short"
+				Value="Kennedy-familiens begivenhedsrige historie skildres, alt fra livet i magtens centrum til de mange kærlighedsaffærer og tragedier." />
+			<App_Data App="MOD" Name="Summary_Medium"
+				Value="Her kommer vi tæt på Kennedy-familien og dens begivenhedsrige historie. Alt fra livet i magtens centrum til privatlivet med de mange sidespring og personlige tragedier skildres." />
+			<App_Data App="MOD" Name="Summary_Long"
+				Value="Sæson 1. Del 1/8. Patriarken Joe Kennedys plan var, at den ældste søn Joseph Jr. skulle være præsident. Han blev dog dræbt i Anden Verdenskrig, og så er det sønnen John, der står for tur. Familien gør alt for at bane ham vejen til målet: Det Hvide Hus." />
+			<App_Data App="MOD" Name="Rating" Value="0" />
+			<App_Data App="MOD" Name="Run_Time" Value="00:41:00" />
+			<App_Data App="MOD" Name="Display_Run_Time" Value="00:45" />
+			<App_Data App="MOD" Name="Year" Value="2011" />
+			<App_Data App="MOD" Name="Country_Of_Origin" Value="USA" />
+			<App_Data App="MOD" Name="Actors" Value="Kinnear, Greg" />
+			<App_Data App="MOD" Name="Actors" Value="Holmes, Katie" />
+			<App_Data App="MOD" Name="Actors" Value="Pepper, Barry" />
+			<App_Data App="MOD" Name="Actors" Value="Wilkinson, Tom" />
+			<App_Data App="MOD" Name="Actors_Display"
+				Value="Greg Kinnear,Katie Holmes,Barry Pepper,Tom Wilkinson" />
+			<App_Data App="MOD" Name="Director" Value="Cassar, Jon" />
+			<App_Data App="MOD" Name="Writers_Display" Value="Jon Cassar" />
+			<App_Data App="MOD" Name="Billing_ID" Value="" />
+			<App_Data App="MOD" Name="Genre" Value="Drama" />
+			<App_Data App="MOD" Name="Licensing_Window_Start" Value="2015-09-01T00:00:00" />
+			<App_Data App="MOD" Name="Licensing_Window_End" Value="2017-02-28T23:59:59" />
+			<App_Data App="MOD" Name="Season_ID" Value="1" />
+			<App_Data App="MOD" Name="Season_Name" Value="The Kennedys" />
+			<App_Data App="MOD" Name="Series_Summary"
+				Value="Her kommer vi tæt på Kennedy-familien og dens begivenhedsrige historie. Alt fra livet i magtens centrum til privatlivet med de mange sidespring og personlige tragedier skildres." />
+			<App_Data App="MOD" Name="Series_Name" Value=" The Kennedys" />
+			<App_Data App="MOD" Name="Episode_ID" Value="1" />
+			<App_Data App="MOD" Name="Episode_Name" Value="Joe's Revenge" />
+		</Metadata>
+	</Asset>
+</ADI>
