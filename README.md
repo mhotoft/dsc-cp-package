@@ -131,8 +131,10 @@ Series contains extra metadata such as season id (which chains the metadata toge
 			<App_Data App="MOD" Name="Episode_ID" Value="1" />
 			<App_Data App="MOD" Name="Episode_Name" Value="Joe's Revenge" />
 
-A full example of a series VOD can be found here: [XXXX0000000000390144](src/main/resources/XXXX0000000000390144/?raw=true)
+A full example of a series VODs can be found here: 
 
+* [XXXX0000000000390110](src/main/resources/XXXX0000000000390110/?raw=true)
+* [XXXX0000000000390109](src/main/resources/XXXX0000000000390109/?raw=true)
 
 # Testing
 We have provided a test suite to test your content. So in order to see if your metadata validates against our XSD, please run this:
