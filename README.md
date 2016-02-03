@@ -33,7 +33,7 @@ Naming of the directory can be done either through title or if you have any inte
 You can get the credentials and setup of our FTP server from the TDC technical staff.
 
 ## Metadata
-All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](src/main/resource/providerADI.xsd?raw=true)). 
+All the metadata is expected to be in the standard of Cablelabs 1.1 (see our XSD file: [providerADI.xsd](src/main/resources/providerADI.xsd?raw=true)). 
 
 The files should be delivered in UTF-8 encoding on our files system (isilon) as shown in the above section.
 
@@ -52,11 +52,11 @@ For normal procedure of priority you do not need to set this attribute.
 ### Not for Public Viewing (Skipping specific medias for speicific platforms)
 
 So if a media does not have specific rights for a platform we can tag these items to be skipped.
-To “tag” an asset that is not deployable for our OTT platforms, you should put in:
+To â€œtagâ€� an asset that is not deployable for our OTT platforms, you should put in:
 
-	<App_Data App=“MOD” Name=“Not_Public_For_Platforms” Value=“OTT”/>
+	<App_Data App=â€œMODâ€� Name=â€œNot_Public_For_Platformsâ€� Value=â€œOTTâ€�/>
 
-in the package tag (Asset_Class=“Package”)
+in the package tag (Asset_Class=â€œPackageâ€�)
 
 ### Multiple Languages
 
@@ -146,7 +146,7 @@ Series contains extra metadata such as season id (which chains the metadata toge
 			<App_Data App="MOD" Name="Season_ID" Value="1" />
 			<App_Data App="MOD" Name="Season_Name" Value="The Kennedys" />
 			<App_Data App="MOD" Name="Series_Summary"
-				Value="Her kommer vi tæt på Kennedy-familien og dens begivenhedsrige historie. Alt fra livet i magtens centrum til privatlivet med de mange sidespring og personlige tragedier skildres." />
+				Value="Her kommer vi tÃ¦t pÃ¥ Kennedy-familien og dens begivenhedsrige historie. Alt fra livet i magtens centrum til privatlivet med de mange sidespring og personlige tragedier skildres." />
 			<App_Data App="MOD" Name="Series_Name" Value=" The Kennedys" />
 			<App_Data App="MOD" Name="Episode_ID" Value="1" />
 			<App_Data App="MOD" Name="Episode_Name" Value="Joe's Revenge" />
