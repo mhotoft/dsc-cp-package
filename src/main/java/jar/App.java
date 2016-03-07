@@ -8,6 +8,7 @@ import org.apache.commons.io.IOUtils;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.util.Assert;
 
 import dk.yousee.vod.kiosk.adi.generated.ADI;
 
@@ -33,6 +34,7 @@ public class App {
 		String adiString = writer.toString();		
 		ADI adi = AdiUtils.transformXml(adiString, true, false);
 		adiInput.close();
+		
 		/*
 		 * Assert.assertNotNull(adi); Assert.assertEquals("CMORE",
 		 * adi.getMetadata().getAMS().getProvider()); List<AppData> appData =

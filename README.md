@@ -87,10 +87,11 @@ The license will put the VOD on a given platform or take it away from our platfo
 				
 
 
-## Video Binary
-The specific delivered format should be know as well as the ending of the filename. E.g. XXXX12312321.ts or other. *.ts are accepted for now.
+## Mezzanine (Video Binary)
+The specific delivered mezzanine-format should be cleared during an onboarding test-phase. 
 
-The link between the ADI and the video binary can be done through naming of the video file or through linking it within the adi.xml it self, like so:
+In general the filename should follow a consistent naming convention. e.g. XXXX12312321.ts - only *.ts and *.mp4 are acceptable container formats for mezzanine files.
+The link between the ADI and the mezzanine can be done through naming of the video file or through linking it within the adi.xml, for instance:
 
 	<Asset>
       <Metadata>
@@ -106,14 +107,12 @@ The link between the ADI and the video binary can be done through naming of the 
 
 ## Image Binary
 
-*.jpg are accepted
-
-We want as high scale image as possible. Possible values for images COVER, SAMART
-Images are referenced through the ADI file, so that it is possible to link from the ADI file to the images.
+The specific delivered image format should be cleared during an onboarding test-phase. *.jpg is the only accepted format.
+We want as high scale image as possible. Possible values for images COVER, SAMART Images are referenced through the ADI file, so that it is possible to link from the ADI file to the images.
 
 COVER is primary. And we would of course also like to get the poster and horizontal images (ARTWORK)
 
-In the ADI you can also describe what format the images are as well (COVER, SAMARTWORK etc.). 
+In the ADI you can also describe what format the images are as well (COVER, SAMARTWORK etc.).
 
 We expect at least one image (cover) per asset in the highest resolution.
 
@@ -130,7 +129,13 @@ We expect at least one image (cover) per asset in the highest resolution.
 
 ## Subtitles 
 
-All subtitles as *.srt or *.smi files are accepted. The link between the ADI metadata file can be either through the naming of the subtitle file or an explicit asset class (Asset_Class="Subtitle").
+The specific formatting of subtitles should be cleared during an onboarding test-phase.
+
+All subtitles must be delivered in *.srt format (UTF-8, with BOM). No special formatting besides - <i> tags </i> - is accepted.
+
+All subtitles should be 'zero-aligned' and confirmed 100% to the mezzanine videofile - ie. run at the same framerate and with no off-sets.
+The link between the ADI metadata file can be either through the naming of the subtitle file or an explicit asset class (Asset_Class="Subtitle").
+
 
 # Full Examples
 
